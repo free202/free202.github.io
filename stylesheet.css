@@ -27,7 +27,6 @@ nav {
     background-image: url(6020105.jpg);
     background-size: cover;
     background-position: center right;
-    
 }
 .logo {
     align-content: center;
@@ -80,7 +79,7 @@ ul a:hover {
     display: block;
     width: 28px;
     height: 3px;
-    background-color: rgb(255, 145, 0);
+    background-color: rgb(255, 255, 255);
     border-radius: 3px;
     transition: all 250ms;
  }
@@ -131,12 +130,12 @@ ul a:hover {
         }
 }
 .content {
-    margin-top: 30px;
+    margin-top: 70px;
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 400;
     font-family: 'niramit' sans-serif;
     letter-spacing: 2px;
@@ -147,7 +146,7 @@ ul a:hover {
 
     padding: 10px;
     margin: 20px 10px;
-    font-size: 30px;
+    font-size: 20px;
     color: white;
 }
 .link {
@@ -182,7 +181,6 @@ ul a:hover {
 
 .judul{
     color: rgb(255, 145, 0);
-    font-size: 20px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -191,37 +189,38 @@ ul a:hover {
     font-weight: 900;
     letter-spacing: 3px;
 }
-.judul p {
-    font-size: 22px;
-}
-
 /* ON MENU DUA------------------------>>>>>>>>> */
 .judul-dua {
-    margin-top: 100px;
+    margin-top: 200px;
     color:rgb(255, 145, 0);
     font-variant: small-caps;
     font-family: 'tektur' sans-serif;
-    letter-spacing: 5px;
+    letter-spacing: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 20px;
+    margin-bottom: 50px;
 }
 span {
     color: white;
 }
+.judul-dua h1 {
+    letter-spacing: 8px;
+}
 
 
 .Project {
-    margin-top: 50px;
+    margin-top: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    z-index: -999;
 }
 
 .wallet {
-    margin: 10px;
+    margin: 0;
     color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
@@ -232,22 +231,19 @@ span {
 
 .wallet h2 {
     font-size: 30px;
-    padding: 10px;
+    padding: 3px;
+    text-indent: 40px;
 }
 
 .wallet p {
     font-size: 20px;
-    padding: 20px;
+    padding: 3px;
 }
 
-.wallet:hover {
-    color: rgb(255, 94, 0);
-    border-radius: 10px;
-}
 
 
 .defi {
-    margin: 10px;;
+    margin: 0px;;
     color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
@@ -259,21 +255,17 @@ span {
 
 .defi h2 {
     font-size: 30px;
-    padding: 10px;
+    padding: 3px;
+    text-indent: 40px;
 }
 
 .defi p {
     font-size: 20px;
-    padding: 20px;
-}
-
-.defi:hover {
-    color: rgb(255, 94, 0);
-    border-radius: 10px;
+    padding: 3px;
 }
 
 .exchange {
-    margin: 10px;
+    margin: 0x;
     color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
@@ -284,25 +276,21 @@ span {
 
 .exchange h2 {
     font-size: 30px;
-    padding: 10px;
+    padding: 3px;
+    text-indent: 40px;
 }
 
 .exchange p {
     font-size: 20px;
-    padding: 20px;
-}
-
-.exchange:hover {
-    color: rgb(255, 94, 0);
+    padding: 3px;
 }
 
 /* TOKENOMICS STAR */
     .tokenomics {
-        border: 1px solid white;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px;
+        padding: 15px;
     }
 .judul-tiga {
     margin-top: 100px;
@@ -314,27 +302,72 @@ span {
     align-items: center;
     justify-content: center;
     font-size: 20px;
+    margin-bottom: 40px;
 }
 
 span {
     color: white;
 }
     .bulat {
-        background-color: aqua;
         border-radius: 100%;
         margin-left: 10px;
         padding: 0;
     }
     .list-token {
-        border: 1px solid white;
-        display: flex;
         color: beige;
-        width: 100px;
+        width: 100%;
+        font-size: 25px;
+        margin: 10px 0;
+
     }
+    .bungkus {
+        margin-top: 30px;
+    }
+    .persen {
+        animation: putar alternate 1s ease infinite;
+    }
+    @keyframes putar {
+        from {
+            transition: all;
+            transform: rotate3d(30deg);
+            padding: 1px;
+        }
 
-
-
-
+        to{
+            transform: rotate3d(10deg);
+            padding: 30px;
+        }
+    }
+    .list-token .satu {
+        background-color: rgb(65, 164, 172);
+        color: black;
+        padding-left: 20px;
+    }
+    .list-token .dua {
+        background-color: rgb(5, 117, 52);
+        color: black;
+        padding-left: 20px;
+    }
+    .list-token .tiga {
+        background-color: rgb(153, 0, 0);
+        color: black;
+        padding-left: 20px;
+    }
+    .list-token .empat {
+        background-color: rgb(129, 145, 146);
+        color: black;
+        padding-left: 20px;
+    }
+    .list-token .lima {
+        background-color: rgb(78, 78, 73);
+        color: black;
+        padding-left: 20px;
+    }
+    .list-token .enam {
+        background-color: rgb(172, 172, 32);
+        color: black;
+        padding-left: 20px;
+    }
 
 
 
@@ -424,7 +457,7 @@ span {
     z-index: -99999;
     width: 90%;
     right: -60px;
-    top: 80px;
+    top: 90px;
 }
 .picture img {
     animation: animasisatu 3s ease alternate infinite;
@@ -468,14 +501,13 @@ span {
     box-sizing: border-box;
 }
 .judul-dua h1{
-    font-size: 20px;
     font-weight: bold;
     display: flex;
     justify-content: center;
     width: 100%;
 }
 .judul-dua {
-    width: 100%;
+    width: 300%;
 }
 .wallet h2 {
     font-size: 20px;
@@ -507,24 +539,24 @@ span {
         font-size: 13px;
     }
     .judul h1 {
-        font-size: 19px;
-        margin-right: 150px;
+        font-size: 28px;
+        margin-right: 200px;
         width: 100px;
         display: flex;
         justify-content: start;
+        letter-spacing: 8px;
+        word-spacing: 10px;
     }
     .judul-dua h1  {
-    font-size: 19px;
+    font-size: 35px;
     width: 50px;
+    letter-spacing: 8px;
     }
-    .judul-dua span {
-    font-size: 19px;
-    width: 50px;
-    margin-top: -20px;
-    }
+
     .judul-dua  {
     width: 50%;
-    margin-left: 50px;
+    margin-left: 100px;
+    
     }
     .link {
         margin:0;
@@ -574,12 +606,38 @@ span {
     .exchange p  {
         font-size: 13px;
         width: 60%;
+        margin-bottom: 8px;
     }
     .exchange h2  {
         font-size: 17px;
         width: 60%;
+        margin-top: 8px;
+    }
+    /* tokenomics */
+    .tokenomics {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
     }
 
+           .persen {
+               animation: putar alternate 1s ease infinite;
+           }
+    
+           @keyframes putar {
+               from {
+                   transition: all;
+                   transform: rotate3d(30deg);
+                   padding-right: 1px;
+               }
+    
+               to {
+                   transform: rotate3d(10deg);
+                   padding-left: 10px;
+               }
+           }
+    /* tokenomics */
 }
 
 
