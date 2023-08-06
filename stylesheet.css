@@ -501,7 +501,7 @@ span {
     }
 }
 .judul {
-    font-size: 15px;
+    font-size: 10px;
 }
 .content p {
     font-size: 20px;
@@ -529,6 +529,9 @@ span {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    background-image: url(back-dua.png);
+    background-repeat: no-repeat;
+    background-size: 400px;
 }
 .judul-dua h1{
     font-weight: bold;
@@ -571,13 +574,13 @@ span {
         font-size: 13px;
     }
     .judul h1 {
-        font-size: 28px;
-        margin-right: 200px;
+        font-size: 20px;
+        margin-right: 60px;
         width: 100px;
         display: flex;
         justify-content: start;
-        letter-spacing: 8px;
-        word-spacing: 10px;
+        letter-spacing: 1px;
+        word-spacing: 40px;
     }
     .judul-dua h1  {
     font-size: 35px;
@@ -683,11 +686,6 @@ span {
             }
             .back {
                 display: none;
-            }
-            .back-dua {
-                display: flex;
-                position: absolute;
-                z-index: -9999999;
             }
 }
 
