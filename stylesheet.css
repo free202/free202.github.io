@@ -499,6 +499,9 @@ span {
         display: flex;
         font-size: large;
     }
+    .bantuan {
+        display: none;
+    }
  /* menu on */
 
 /* section 1 */
@@ -515,7 +518,7 @@ span {
 }
 .picture-dua {
     position: absolute;
-    right: 70px;
+    right: 80px;
     top: 200px;
     animation: free alternate-reverse 2s ease infinite;
 }
@@ -529,6 +532,9 @@ span {
         bottom: 30px;
     }
 
+}
+.picture-tiga {
+    display: none;
 }
 .picture  {
     position: absolute;
@@ -606,7 +612,7 @@ span {
 }
 }
 /* HANDPHONE =======================> */
-@media (max-width: 800px) {
+@media (max-width: 600px) {
     .container p {
         display: flex;
         width: 300px;
