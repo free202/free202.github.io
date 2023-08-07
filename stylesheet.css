@@ -517,7 +517,7 @@ span {
     position: absolute;
     right: 70px;
     top: 200px;
-    animation: free alternate 2s ease infinite;
+    animation: free alternate-reverse 2s ease infinite;
 }
 
 @keyframes free {
