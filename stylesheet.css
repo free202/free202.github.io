@@ -139,6 +139,12 @@ ul a:hover {
   top: 210px;
   animation: free alternate 2s infinite;
 }
+.picture-dua-v {
+  position: absolute;
+  right: 290px;
+  top: 210px;
+  animation: free alternate 2s infinite;
+}
 .picture-dua-y {
   position: absolute;
   right: 50px;
@@ -147,6 +153,7 @@ ul a:hover {
 }
 .picture-dua-u {
   animation: free 2s alternate infinite;
+  top: 200px;
   right: 320px;
   position: absolute;
 }
@@ -617,7 +624,9 @@ span {
   .bantuan {
     display: none;
   }
-
+  .judul {
+    margin-top: 150px;
+  }
   .picture-tiga {
     display: none;
   }
@@ -751,31 +760,55 @@ span {
     display: flex;
     padding: 0 30px;
   }
-  .picture-dua-u {
-    display: none;
-  }
-  .picture-dua-z {
-    top: 70px;
-    right: 160px;
+  .picture-dua-bitcoin {
+    top: 120px;
+    right: 230px;
+    position: absolute;
     animation: freedua 1s alternate ease infinite;
   }
-  .picture-dua-x {
-    top: 180px;
-    right: 290px;
-    animation: freedom 2s alternate ease infinite;
+  .picture-dua-ether {
+    top: 100px;
+    right: 150px;
+    position: absolute;
+    animation: freedua 1s alternate ease infinite;
   }
-  .picture-dua-y {
+  .picture-dua-usdt {
+    top: 200px;
+    right: 290px;
+    position: absolute;
+    animation: freedua 1s alternate ease infinite;
+  }
+  .picture-dua-bnb {
+    top: 360px;
+    position: absolute;
+    right: 240px;
+    animation: freedua 1s alternate ease infinite;
+  }
+  .picture-dua-busd {
+    top: 355px;
+    right: 160px;
+    position: absolute;
+    animation: freedua 1s alternate ease infinite;
+  }
+  .picture-dua-TRS {
+    top: 300px;
+    right: 90px;
+    position: absolute;
+    animation: freedua 1s alternate ease infinite;
+  }
+  .picture-dua-free {
     top: 190px;
-    right: 70px;
-    animation: freedom 2s alternate ease infinite;
+    position: absolute;
+    right: 40px;
+    animation: freedua 1s alternate ease infinite;
   }
   @keyframes freedua {
     0% {
-      transform: translateY(30px);
+      transform: translateY(-10px);
     }
 
     100% {
-      transform: translateY(40px);
+      transform: translateY(5px);
     }
   }
   @keyframes freedom {
