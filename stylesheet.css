@@ -10,24 +10,33 @@ body {
   font-family: "Roboto" sans-serif;
   margin: 0%;
   padding: 0%;
-  background-image: url(img/6020105.jpg);
-  background-size: contain;
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.719),
+      rgba(0, 0, 0, 0.781)
+    ),
+    url(img/6020105.jpg);
   background-position: center;
+  background-size: contain;
   animation: bul linear 20s infinite;
 }
 nav {
   background-color: black;
+  position: fixed;
   display: flex;
   z-index: 9999;
+  top: -5px;
+  align-items: center;
   width: 100%;
   height: 70px;
   list-style: none;
   justify-content: space-between;
-  align-items: center;
-  box-shadow: 0px 0px 5px rgb(255, 166, 236);
-  background-image: url(img/6020105.jpg);
-  background-size: cover;
+  box-shadow: 0px 0px 5px rgb(175, 175, 175);
+  background: linear-gradient(rgb(83, 40, 0), rgb(0, 4, 54));
   background-position: 40px;
+}
+nav .sticky {
+  background-color: #ffffff;
 }
 @keyframes bul {
   0% {
@@ -56,11 +65,7 @@ ul a {
   text-decoration: none;
 }
 ul a:hover {
-  border: 1px solid rgb(255, 145, 0);
-  border-radius: 15px;
-  width: 100px;
-  color: rgb(0, 0, 0);
-  background-color: rgb(179, 179, 179);
+  color: rgb(255, 94, 0);
 }
 .extra-bar a {
   margin: 0 4px;
@@ -189,7 +194,7 @@ ul a:hover {
 .link .satu {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #ff9f46;
+  background: linear-gradient(rgb(255, 136, 0), rgb(0, 0, 0));
   color: #ffffff;
   border-radius: 5px;
   border: 1px solid #ff9f46;
@@ -205,7 +210,7 @@ ul a:hover {
 .link .dua {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #ff9f46;
+  background: linear-gradient(rgb(255, 136, 0), rgb(0, 0, 0));
   color: #ffffff;
   border-radius: 5px;
   border: 1px solid #ff9f46;
@@ -217,8 +222,8 @@ ul a:hover {
 }
 
 .link a:hover {
-  background-color: transparent;
-  color: #ffa946;
+  background: transparent;
+  color: #000000;
 }
 
 .judul {
@@ -319,52 +324,13 @@ span {
   margin-bottom: 40px;
 }
 span {
-  color: white;
-}
-.tokenomics {
-  display: flex;
-  justify-content: space-around;
-}
-.list-token {
-  margin-top: 20px;
+  color: rgb(167, 167, 167);
 }
 
-.list-token .satu {
-  background-color: rgb(189, 186, 12);
-  color: rgb(0, 0, 0);
-  padding: 10px;
-  border-radius: 19px;
+.tutup {
+  padding: 0;
 }
-.list-token .dua {
-  background-color: rgb(19, 143, 25);
-  color: rgb(0, 0, 0);
-  padding: 10px;
-  border-radius: 19px;
-}
-.list-token .tiga {
-  background-color: rgb(190, 123, 0);
-  color: rgb(0, 0, 0);
-  padding: 10px;
-  border-radius: 19px;
-}
-.list-token .empat {
-  background-color: rgb(151, 151, 151);
-  color: rgb(0, 0, 0);
-  padding: 10px;
-  border-radius: 19px;
-}
-.list-token .lima {
-  background-color: rgb(3, 77, 173);
-  color: rgb(0, 0, 0);
-  padding: 10px;
-  border-radius: 19px;
-}
-.list-token .enam {
-  background-color: rgb(187, 3, 3);
-  color: rgb(0, 0, 0);
-  padding: 10px;
-  border-radius: 19px;
-}
+
 /* TOKENOMICS END */
 
 /* fasility */
@@ -424,7 +390,7 @@ span {
 }
 
 .judul-tiga span {
-  color: white;
+  color: rgb(165, 165, 165);
 }
 .list-biz {
   padding: 0 10px;
@@ -437,9 +403,9 @@ span {
   margin-top: 60px;
 }
 .biz-biz {
-  background-color: rgb(0, 0, 0);
+  background: linear-gradient(rgb(83, 40, 0), rgb(0, 4, 54));
   padding: 10px 10px;
-  color: white;
+  color: rgb(156, 156, 156);
   border-radius: 10px;
   width: 70%;
 }
@@ -457,26 +423,19 @@ span {
 @media (max-width: 768px) {
   nav ul {
     position: absolute;
-    height: 100vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     z-index: 9999;
     top: -100%;
     right: 0%;
-    background-color: rgb(0, 0, 0);
+    background: linear-gradient(rgb(83, 40, 0), rgb(5, 0, 54));
     transition: all 1s;
     border-radius: 5px;
     opacity: 0;
     width: 100%;
-  }
-
-  ul li a {
-    top: 50px;
-    bottom: -90px;
-    right: -250px;
-    line-height: 30px;
   }
 
   nav ul.slide {
@@ -487,12 +446,6 @@ span {
   .logo {
     font-size: 20px;
   }
-  .logo:active {
-    transform: rotateY(880deg);
-    margin-left: 20px;
-    transition: all 1s;
-  }
-
   /* menu on */
   .menu-toggle {
     display: flex;
@@ -505,7 +458,7 @@ span {
 
   /* section 1 */
   .container {
-    margin: 100px 0 0 0;
+    margin: 200px 0 0 0;
     display: flex;
     flex-direction: column-reverse;
     box-sizing: border-box;
@@ -531,11 +484,11 @@ span {
   }
   @keyframes animasisatu {
     0% {
-      transform: translateY(60px);
+      transform: translateY(10px);
     }
 
     100% {
-      transform: translateY(70px);
+      transform: translateY(20px);
       transform: translateX(30px);
     }
   }
@@ -545,17 +498,42 @@ span {
   .content p {
     color: white;
   }
-  .link {
-    padding: 0;
-    margin: 0;
-  }
   .link .satu {
-    padding: 10px;
-    margin: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(rgb(255, 136, 0), rgb(0, 0, 0));
+    color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #ff9f46;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-top: 5px;
+    text-decoration: none;
+  }
+  .link {
+    z-index: 99999;
+  }
+  .link .satu:hover {
+    background-color: transparent;
+    color: #ff9f46;
   }
   .link .dua {
-    padding: 8px;
-    margin: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(rgb(255, 136, 0), rgb(0, 0, 0));
+    color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #ff9f46;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-top: 10px;
+    margin-bottom: 130px;
+    text-decoration: none;
+  }
+
+  .link a:hover {
+    background: transparent;
+    color: #000000;
   }
 
   /* SECTION DUA----------------------->>>> */
@@ -575,25 +553,6 @@ span {
 @media (max-width: 600px) {
   .container p {
     display: flex;
-  }
-
-  .link {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  .link .satu {
-    margin: 0 10px;
-    padding: 10px;
-  }
-  .link .dua {
-    margin: 0 10px;
-    padding: 10px;
-  }
-  .link a {
-    padding: 10px;
-    margin: 0;
   }
 
   .content p {
@@ -627,22 +586,16 @@ span {
     margin-top: 150px;
   }
 
-  .tokenomics {
-    display: flex;
-    justify-content: center;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
   .menu-toggle span {
     z-index: 9999;
   }
   .menu-toggle input {
     z-index: 99999;
   }
-
-  .back {
-    display: none;
+  .token {
+    border: 1px solid white;
   }
+  /* TOKENOMICS */
   /* affiliate */
   .awal {
     display: flex;
@@ -652,9 +605,9 @@ span {
     display: none;
   }
   .picture-dua-z {
-    top: 100px;
+    top: 70px;
     right: 160px;
-    animation: freedom 2s alternate ease infinite;
+    animation: freedua 1s alternate ease infinite;
   }
   .picture-dua-x {
     top: 180px;
@@ -665,6 +618,15 @@ span {
     top: 190px;
     right: 70px;
     animation: freedom 2s alternate ease infinite;
+  }
+  @keyframes freedua {
+    0% {
+      transform: translateY(30px);
+    }
+
+    100% {
+      transform: translateY(40px);
+    }
   }
   @keyframes freedom {
     from {
