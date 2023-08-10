@@ -332,7 +332,6 @@ span {
 
 .tutup {
   padding: 0;
-  border: 1px solid white;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -340,7 +339,6 @@ span {
 }
 .list-token {
   color: rgb(206, 206, 206);
-  border: 1px solid white;
   padding: 16px;
   margin-right: 16px;
 }
@@ -358,6 +356,17 @@ span {
 }
 .tombol-dua i:hover {
   color: #b4b4b4;
+}
+.gam {
+  animation: persen alternate 2s ease infinite;
+}
+@keyframes persen {
+  from {
+    transform: translateX(-10px);
+  }
+  to {
+    transform: translateX(20px);
+  }
 }
 
 /* TOKENOMICS END */
