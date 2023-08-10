@@ -121,11 +121,14 @@ ul a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 4px;
+  margin-top: 100px;
 }
 .picture {
   margin-right: 60px;
   display: none;
+}
+.bantuan {
+  display: flex;
 }
 .picture-dua-z {
   position: absolute;
@@ -315,7 +318,7 @@ span {
 
 /* TOKENOMICS----------------------------------------- STAR */
 .judul-tiga {
-  margin-top: 250px;
+  margin-top: 100px;
   color: rgb(255, 145, 0);
   font-variant: small-caps;
   display: flex;
@@ -329,6 +332,32 @@ span {
 
 .tutup {
   padding: 0;
+  border: 1px solid white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -30px;
+}
+.list-token {
+  color: rgb(206, 206, 206);
+  border: 1px solid white;
+  padding: 16px;
+  margin-right: 16px;
+}
+.tombol-dua {
+  display: flex;
+  justify-content: center;
+}
+.tombol-dua a {
+  text-decoration: none;
+}
+.tombol-dua i {
+  font-size: 16px;
+  margin-right: 10px;
+  color: #ff9f46;
+}
+.tombol-dua i:hover {
+  color: #b4b4b4;
 }
 
 /* TOKENOMICS END */
@@ -341,12 +370,12 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 .judul-empat span {
-  color: white;
+  color: rgb(201, 201, 201);
 }
-/* fasility */
+
 .card {
   margin-top: 25px;
 }
@@ -356,7 +385,7 @@ span {
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 0 0px;
-  margin-top: 50px;
+  margin-top: 0px;
 }
 .card .card-body {
   background-color: black;
@@ -378,6 +407,23 @@ span {
   display: none;
 }
 
+.tombol {
+  display: flex;
+  justify-content: center;
+}
+.tombol a {
+  text-decoration: none;
+}
+.tombol i {
+  font-size: 16px;
+  margin-right: 10px;
+  color: #ff9f46;
+}
+.tombol i:hover {
+  color: #ffffff;
+}
+/* fasility===========================================================> */
+
 /* affiliate */
 .judul-lima {
   margin-top: 200px;
@@ -386,7 +432,7 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: -50px;
+  margin-bottom: -0px;
 }
 
 .judul-tiga span {
@@ -400,12 +446,11 @@ span {
 }
 .list-biz img {
   border-radius: 100px;
-  margin-top: 60px;
+  margin-top: -19px;
 }
 .biz-biz {
-  background: linear-gradient(rgb(83, 40, 0), rgb(0, 4, 54));
   padding: 10px 10px;
-  color: rgb(156, 156, 156);
+  color: rgb(216, 216, 216);
   border-radius: 10px;
   width: 70%;
 }
@@ -413,9 +458,65 @@ span {
   content: "Company";
   font-size: small;
   margin-left: 10px;
-  color: #1410ff;
+  color: #ff0000;
+}
+.tombol-tiga {
+  display: flex;
+  justify-content: center;
+}
+.tombol-tiga a {
+  text-decoration: none;
+}
+.tombol-tiga i {
+  font-size: 16px;
+  margin-right: 10px;
+  color: #ff9f46;
+}
+.tombol-tiga i:hover {
+  color: #b4b4b4;
 }
 
+/* fopoter */
+.footer-ev {
+  background: linear-gradient(rgb(83, 40, 0), rgb(0, 4, 54));
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  border-top: 1px solid rgba(231, 231, 231, 0.712);
+  padding: 10px;
+}
+.info {
+  color: white;
+}
+.content-fo {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.content-fo a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.addres {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.addres a {
+  color: white;
+  text-decoration: none;
+}
+
+.form-label {
+  color: #ffffff;
+}
+.subs a {
+  text-decoration: none;
+  color: white;
+}
+.subs {
+  margin-top: 5px;
+}
 /* fopoter */
 
 /* RESPONSIVE BREAKPOINT ----------------------------------------->*/
@@ -582,8 +683,8 @@ span {
   }
   /* tokenomics */
   .judul-tiga {
-    margin-bottom: 0;
-    margin-top: 150px;
+    margin-bottom: 40px;
+    margin-top: 40px;
   }
 
   .menu-toggle span {
@@ -596,7 +697,6 @@ span {
     border: 1px solid white;
   }
   /* TOKENOMICS */
-  /* affiliate */
   .awal {
     display: flex;
     padding: 0 30px;
@@ -635,5 +735,8 @@ span {
     to {
       rotate: 20deg;
     }
+  }
+  .judul-lima {
+    margin-bottom: 40px;
   }
 }
