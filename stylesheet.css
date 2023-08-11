@@ -5,6 +5,48 @@
   list-style: none;
   font-family: "Roboto" sans-serif;
 }
+/* loading */
+.loading {
+  top: 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 99999;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  border: 6px solid white;
+  border-radius: 100%;
+  border-top-color: #ff9f46;
+  animation: putar linear 1s infinite;
+}
+.asa img {
+  top: 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 999999;
+  bottom: 0;
+  margin: auto;
+}
+.backg {
+  width: 100%;
+  position: fixed;
+  height: 5000vh;
+  z-index: 9;
+  top: -100px;
+  background-color: black;
+}
+@keyframes putar {
+  from {
+    rotate: 0;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+/* loading */
 body {
   background-color: black;
   font-family: "Roboto" sans-serif;
@@ -126,45 +168,8 @@ ul a:hover {
 }
 .bantuan {
   display: flex;
-}
-.picture-dua-z {
-  position: absolute;
-  right: 150px;
-  top: 180px;
-  animation: free alternate 2s infinite;
-}
-.picture-dua-x {
-  position: absolute;
-  right: 290px;
-  top: 210px;
-  animation: free alternate 2s infinite;
-}
-.picture-dua-v {
-  position: absolute;
-  right: 290px;
-  top: 210px;
-  animation: free alternate 2s infinite;
-}
-.picture-dua-y {
-  position: absolute;
-  right: 50px;
-  top: 230px;
-  animation: free 2s alternate infinite;
-}
-.picture-dua-u {
-  animation: free 2s alternate infinite;
-  top: 200px;
-  right: 320px;
-  position: absolute;
-}
-@keyframes free {
-  0% {
-    transform: scaleX(60px);
-  }
-
-  100% {
-    transform: translateX(-30px);
-  }
+  margin-bottom: 100px;
+  margin-right: 200px;
 }
 .bantuan {
   animation: animasidua alternate 2s ease infinite;
@@ -177,6 +182,57 @@ ul a:hover {
   100% {
     transform: translateY(70px);
     transform: translateX(30px);
+  }
+}
+.picture-dua-bitcoin {
+  top: 120px;
+  right: 430px;
+  position: absolute;
+  animation: freedua 1s alternate ease infinite;
+}
+.picture-dua-ether {
+  top: 140px;
+  right: 300px;
+  position: absolute;
+  animation: freedua 1s alternate ease infinite;
+}
+.picture-dua-usdt {
+  top: 200px;
+  right: 500px;
+  position: absolute;
+  animation: freedua 1s alternate ease infinite;
+}
+.picture-dua-bnb {
+  top: 460px;
+  position: absolute;
+  right: 300px;
+  animation: freedua 1s alternate ease infinite;
+}
+.picture-dua-busd {
+  top: 455px;
+  right: 390px;
+  position: absolute;
+  animation: freedua 1s alternate ease infinite;
+}
+.picture-dua-TRS {
+  top: 400px;
+  right: 200px;
+  position: absolute;
+  animation: freedua 1s alternate ease infinite;
+}
+.picture-dua-free {
+  top: 250px;
+  position: absolute;
+  right: 200px;
+  animation: freedua 1s alternate ease infinite;
+}
+@keyframes freedua {
+  0% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(5px);
   }
 }
 .content {
@@ -473,7 +529,7 @@ span {
   content: "Company";
   font-size: small;
   margin-left: 10px;
-  color: #ff0000;
+  color: rgb(255, 145, 0);
 }
 .tombol-tiga {
   display: flex;
@@ -484,8 +540,8 @@ span {
 }
 .tombol-tiga i {
   font-size: 16px;
-  margin-right: 10px;
   color: #ff9f46;
+  margin-right: 300px;
 }
 .tombol-tiga i:hover {
   color: #b4b4b4;
@@ -550,7 +606,7 @@ span {
 }
 .rrp a {
   text-decoration: none;
-  color: #ff0000;
+  color: rgb(255, 145, 0);
 }
 .rrp a:hover {
   color: #ff9f46;
@@ -581,13 +637,13 @@ span {
 @media (max-width: 768px) {
   nav ul {
     position: absolute;
-    height: 60vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     z-index: 9999;
-    top: -100%;
+    top: -9900%;
     right: 0%;
     background: linear-gradient(rgb(83, 40, 0), rgb(5, 0, 54));
     transition: all 1s;
