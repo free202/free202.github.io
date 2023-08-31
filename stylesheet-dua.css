@@ -1,5 +1,5 @@
 nav {
-  background: linear-gradient(rgb(83, 40, 0), rgb(0, 4, 54));
+  background: linear-gradient(rgb(255, 123, 0), rgb(0, 7, 100));
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,7 +63,15 @@ ul li a {
   width: 100%;
   position: fixed;
   height: 5000vh;
-  z-index: 9;
+  z-index: 9999;
   top: -100px;
   background-color: black;
+}
+@keyframes putar {
+  from {
+    rotate: 0;
+  }
+  to {
+    rotate: 360deg;
+  }
 }

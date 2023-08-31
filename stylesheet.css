@@ -3,7 +3,8 @@
   padding: 0%;
   text-decoration: none;
   list-style: none;
-  font-family: "Roboto" sans-serif;
+  font-family: "Tektur" sans-serif;
+  text-transform: capitalize;
 }
 /* loading */
 .loading {
@@ -34,7 +35,7 @@
   width: 100%;
   position: fixed;
   height: 5000vh;
-  z-index: 9;
+  z-index: 9999;
   top: -100px;
   background-color: black;
 }
@@ -49,13 +50,13 @@
 /* loading */
 body {
   background-color: black;
-  font-family: "Roboto" sans-serif;
+  font-family: "tektur" sans-serif;
   margin: 0%;
   padding: 0%;
   background: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.719),
-      rgba(0, 0, 0, 0.781)
+      rgba(0, 0, 0, 0.718),
+      rgba(0, 0, 0, 0.757)
     ),
     url(img/6020105.jpg);
   background-position: center;
@@ -64,7 +65,6 @@ body {
 }
 nav {
   background-color: black;
-  position: fixed;
   display: flex;
   z-index: 9999;
   top: -5px;
@@ -73,8 +73,8 @@ nav {
   height: 70px;
   list-style: none;
   justify-content: space-between;
-  box-shadow: 0px 0px 5px rgb(175, 175, 175);
-  background: linear-gradient(rgb(83, 40, 0), rgb(0, 4, 54));
+  box-shadow: 0px 0px 5px rgb(255, 252, 252);
+  background: linear-gradient(rgb(214, 103, 0), rgb(0, 4, 54));
   background-position: 40px;
 }
 @keyframes bul {
@@ -95,7 +95,7 @@ ul {
   padding-top: 10px;
 }
 ul a {
-  color: #b4b4b4;
+  color: #ffffff;
   padding-left: 8px;
   padding-right: 20px;
   font-weight: 500;
@@ -106,10 +106,16 @@ ul a {
 ul a:hover {
   color: rgb(255, 94, 0);
 }
+ul li .active {
+  color: #ff9f46;
+}
 .extra-bar a {
   margin: 0 4px;
   font-size: 24px;
-  color: #999;
+  color: #ffffff;
+}
+.extra-bar a:hover {
+  color: #ff9f46;
 }
 .menu-toggle {
   display: flex;
@@ -169,72 +175,21 @@ ul a:hover {
 .bantuan {
   display: flex;
   margin-bottom: 100px;
-  margin-right: 200px;
+  margin-right: 0px;
 }
 .bantuan {
   animation: animasidua alternate 2s ease infinite;
 }
 @keyframes animasidua {
   0% {
-    transform: translateY(60px);
+    transform: translateY(0px);
   }
 
   100% {
-    transform: translateY(70px);
-    transform: translateX(30px);
+    transform: translateY(20px);
   }
 }
-.picture-dua-bitcoin {
-  top: 120px;
-  right: 430px;
-  position: absolute;
-  animation: freedua 1s alternate ease infinite;
-}
-.picture-dua-ether {
-  top: 140px;
-  right: 300px;
-  position: absolute;
-  animation: freedua 1s alternate ease infinite;
-}
-.picture-dua-usdt {
-  top: 200px;
-  right: 500px;
-  position: absolute;
-  animation: freedua 1s alternate ease infinite;
-}
-.picture-dua-bnb {
-  top: 460px;
-  position: absolute;
-  right: 300px;
-  animation: freedua 1s alternate ease infinite;
-}
-.picture-dua-busd {
-  top: 455px;
-  right: 390px;
-  position: absolute;
-  animation: freedua 1s alternate ease infinite;
-}
-.picture-dua-TRS {
-  top: 400px;
-  right: 200px;
-  position: absolute;
-  animation: freedua 1s alternate ease infinite;
-}
-.picture-dua-free {
-  top: 250px;
-  position: absolute;
-  right: 200px;
-  animation: freedua 1s alternate ease infinite;
-}
-@keyframes freedua {
-  0% {
-    transform: translateY(-10px);
-  }
 
-  100% {
-    transform: translateY(5px);
-  }
-}
 .content {
   width: 50%;
   display: flex;
@@ -245,7 +200,7 @@ ul a:hover {
 }
 .content p {
   padding: 10px 40px;
-  color: #b4b4b4;
+  color: #ffffff;
 }
 .content h4 {
   margin-bottom: -5px;
@@ -258,7 +213,7 @@ ul a:hover {
   display: inline-block;
   padding: 10px 20px;
   background: linear-gradient(rgb(255, 136, 0), rgb(0, 0, 0));
-  color: #b4b4b4;
+  color: #ffffff;
   border-radius: 5px;
   border: 1px solid #ff9f46;
   -webkit-transition: all 0.3s;
@@ -274,7 +229,7 @@ ul a:hover {
   display: inline-block;
   padding: 10px 20px;
   background: linear-gradient(rgb(255, 136, 0), rgb(0, 0, 0));
-  color: #b4b4b4;
+  color: #ffffff;
   border-radius: 5px;
   border: 1px solid #ff9f46;
   -webkit-transition: all 0.3s;
@@ -308,7 +263,7 @@ ul a:hover {
   margin-bottom: 10px;
 }
 span {
-  color: #b4b4b4;
+  color: #ffffff;
 }
 
 .Project {
@@ -318,22 +273,23 @@ span {
   align-items: center;
   cursor: pointer;
   z-index: -999;
+  text-transform: capitalize;
 }
 
 .wallet {
   margin: 0;
-  color: #b4b4b4;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-variant: small-caps;
+  text-transform: capitalize;
   border-radius: 10px;
 }
 
 .wallet h2 {
   padding: 3px;
   text-indent: 40px;
-  color: #b4b4b4;
+  color: #ffffff;
 }
 
 .wallet p {
@@ -342,11 +298,10 @@ span {
 
 .defi {
   margin: 0px;
-  color: #b4b4b4;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-variant: small-caps;
   border-radius: 10px;
 }
 
@@ -360,12 +315,11 @@ span {
 }
 
 .exchange {
-  margin: 0x;
-  color: #b4b4b4;
+  margin: 0;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-variant: small-caps;
   border-radius: 10px;
 }
 
@@ -381,14 +335,13 @@ span {
 .judul-tiga {
   margin-top: 100px;
   color: rgb(255, 145, 0);
-  font-variant: small-caps;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 40px;
 }
 span {
-  color: rgb(167, 167, 167);
+  color: rgb(255, 255, 255);
 }
 
 .tutup {
@@ -400,7 +353,7 @@ span {
   margin-top: -30px;
 }
 .list-token {
-  color: #b4b4b4;
+  color: #ffffff;
   padding: 16px;
   margin-right: 16px;
 }
@@ -417,18 +370,37 @@ span {
   color: #ff9f46;
 }
 .tombol-dua i:hover {
-  color: #b4b4b4;
+  color: #ffffff;
 }
-.gam {
-  animation: persen alternate 2s ease infinite;
+.skill {
+  width: 160px;
+  height: 160px;
+  position: relative;
 }
-@keyframes persen {
-  from {
-    transform: translateX(-10px);
-  }
-  to {
-    transform: translateX(20px);
-  }
+.outer {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 15),
+    6px 6px 10px -1px rgba(0, 0, 0, 15);
+}
+.inner {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px -6px -1px rgba(225, 225, 225, 0.7),
+    -0.5px 0.5px 0px rgba(225, 225, 225, 0.1),
+    -0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+    0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#number {
+  font-weight: 600px;
+  color: #555;
 }
 
 /* TOKENOMICS END */
@@ -444,7 +416,7 @@ span {
   margin-bottom: 0px;
 }
 .judul-empat span {
-  color: rgb(201, 201, 201);
+  color: rgb(255, 255, 255);
 }
 
 .card {
@@ -454,7 +426,7 @@ span {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding: 0 0px;
   margin-top: 0px;
 }
@@ -462,7 +434,7 @@ span {
   background-color: black;
 }
 .card .card-text {
-  color: #b4b4b4;
+  color: #ffffff;
 }
 .card:hover {
   background-color: chocolate;
@@ -507,7 +479,7 @@ span {
 }
 
 .judul-tiga span {
-  color: rgb(165, 165, 165);
+  color: rgb(255, 255, 255);
 }
 .list-biz {
   padding: 0 10px;
@@ -637,12 +609,12 @@ span {
 @media (max-width: 768px) {
   nav ul {
     position: absolute;
-    height: 100vh;
+    height: 120%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 9999;
+    z-index: 1;
     top: -100%;
     right: 0%;
     background: linear-gradient(rgb(155, 75, 0), rgb(0, 4, 54));
@@ -659,7 +631,7 @@ span {
   }
   .menu-toggle {
     display: inline-flex;
-    z-index: 99999;
+    z-index: 999;
   }
   .logo {
     font-size: 20px;
@@ -670,20 +642,19 @@ span {
     font-size: large;
   }
   .bantuan {
-    display: none;
+    display: flex;
+    margin: -50px;
   }
   /* menu on */
 
   /* section 1 */
   .container {
-    margin: 200px 0 0 0;
+    margin: 20px 0 0 0;
     display: flex;
     flex-direction: column-reverse;
     box-sizing: border-box;
   }
-  .bantuan {
-    display: none;
-  }
+
   .judul {
     margin-top: 150px;
   }
@@ -697,7 +668,7 @@ span {
     z-index: -99999;
     width: 90%;
     right: 0px;
-    top: 160px;
+    top: 100px;
   }
   .picture img {
     animation: animasisatu 2s ease alternate infinite;
@@ -806,62 +777,12 @@ span {
     margin-top: 40px;
   }
 
-  .menu-toggle span {
-    z-index: 9999;
-  }
-  .menu-toggle input {
-    z-index: 99999;
-  }
-  .token {
-    border: 1px solid white;
-  }
   /* TOKENOMICS */
   .awal {
     display: flex;
     padding: 0 30px;
   }
-  .picture-dua-bitcoin {
-    top: 120px;
-    right: 230px;
-    position: absolute;
-    animation: freedua 1s alternate ease infinite;
-  }
-  .picture-dua-ether {
-    top: 100px;
-    right: 150px;
-    position: absolute;
-    animation: freedua 1s alternate ease infinite;
-  }
-  .picture-dua-usdt {
-    top: 200px;
-    right: 290px;
-    position: absolute;
-    animation: freedua 1s alternate ease infinite;
-  }
-  .picture-dua-bnb {
-    top: 360px;
-    position: absolute;
-    right: 240px;
-    animation: freedua 1s alternate ease infinite;
-  }
-  .picture-dua-busd {
-    top: 355px;
-    right: 160px;
-    position: absolute;
-    animation: freedua 1s alternate ease infinite;
-  }
-  .picture-dua-TRS {
-    top: 300px;
-    right: 90px;
-    position: absolute;
-    animation: freedua 1s alternate ease infinite;
-  }
-  .picture-dua-free {
-    top: 190px;
-    position: absolute;
-    right: 40px;
-    animation: freedua 1s alternate ease infinite;
-  }
+
   @keyframes freedua {
     0% {
       transform: translateY(-10px);
