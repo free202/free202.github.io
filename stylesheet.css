@@ -413,6 +413,7 @@ span {
   background: #6c2a0123;
   border-radius: 20px;
   padding: 10px;
+  overflow: hidden;
 }
 
 .box {
@@ -739,11 +740,13 @@ span {
   display: flex;
   flex-direction: column;
   color: white;
-  padding: 20px;
+  padding: 5px;
 }
 .addres a {
   color: white;
   text-decoration: none;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .form-label {
