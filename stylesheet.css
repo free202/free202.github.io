@@ -329,6 +329,39 @@ span {
 .exchange p {
   padding: 3px;
 }
+.wallet img {
+  animation: wallet 2s infinite ease-in-out alternate;
+}
+@keyframes wallet {
+  0% {
+    transform: scaleX(85%);
+  }
+  100% {
+    transform: scaleX(100%);
+  }
+}
+.exchange img {
+  animation: ex 2s infinite ease-in-out alternate;
+}
+@keyframes ex {
+  0% {
+    transform: scale(85%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+.defi img {
+  animation: df 2s infinite ease-in-out alternate;
+}
+@keyframes df {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
 
 /* TOKENOMICS----------------------------------------- STAR */
 .judul-tiga {
@@ -675,7 +708,7 @@ span {
   margin-right: 10px;
 }
 .tombol-tiga i:hover {
-  color: #b4b4b4;
+  color: #ffffff;
 }
 
 /* fopoter */
