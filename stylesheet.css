@@ -648,6 +648,7 @@ span {
     display: flex;
     margin-top: 50px;
     margin-bottom: -50px;
+    right: 0;
   }
   /* menu on */
 
@@ -820,7 +821,10 @@ span {
     transform: translateY(5px);
   }
   100% {
-    transform: translateY(15px);
-    transform: translateX(-18px);
+    transform: translateY(8px);
+    transform: translateX(-9px);
   }
+}
+.addres {
+  padding-right: 0;
 }
