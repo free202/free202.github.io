@@ -166,7 +166,7 @@ ul li .active {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 0px;
 }
 .picture {
   margin-right: 60px;
@@ -174,7 +174,7 @@ ul li .active {
 }
 .bantuan {
   display: flex;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   margin-right: 0px;
 }
 .bantuan {
@@ -601,6 +601,9 @@ span {
   color: #ff9f46;
   cursor: pointer;
 }
+.fly-moon {
+  display: none;
+}
 
 /* fopoter */
 
@@ -643,20 +646,21 @@ span {
   }
   .bantuan {
     display: flex;
-    margin: -50px;
+    margin-top: 50px;
+    margin-bottom: -50px;
   }
   /* menu on */
 
   /* section 1 */
   .container {
-    margin: 20px 0 0 0;
+    margin: 200px 0 0 0;
     display: flex;
     flex-direction: column-reverse;
     box-sizing: border-box;
   }
 
   .judul {
-    margin-top: 150px;
+    margin-top: -200px;
   }
   .picture-tiga {
     display: none;
@@ -802,5 +806,21 @@ span {
   }
   .judul-lima {
     margin-bottom: 40px;
+  }
+}
+.fly-moon {
+  display: inline-flex;
+  position: relative;
+  bottom: -350px;
+  left: 230px;
+  animation: fly ease-in-out infinite 2s alternate;
+}
+@keyframes fly {
+  0% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(15px);
+    transform: translateX(-18px);
   }
 }
