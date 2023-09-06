@@ -20,3 +20,7 @@ var tutup = document.querySelector(".backg");
 window.addEventListener("load", function () {
   tutup.style.display = "none";
 });
+
+const btnKirim = document.querySelector(".btn-kirim");
+const btnLoading = document.querySelector(".btn-loading");
+const myAlert = document.querySelector(".my-alert");

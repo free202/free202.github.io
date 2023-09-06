@@ -371,7 +371,7 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: -50px;
 }
 span {
   color: rgb(255, 255, 255);
@@ -554,7 +554,7 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 0px;
+  margin-bottom: 25px;
 }
 .judul-empat span {
   color: rgb(255, 255, 255);
@@ -746,6 +746,50 @@ span {
 }
 
 /* fopoter */
+
+/* project tambahan */
+.judul-empat-2 {
+  margin-top: 200px;
+  color: rgb(255, 145, 0);
+  font-variant: small-caps;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -45px;
+}
+.atap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+}
+.fif-conten {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+}
+.fif {
+  margin-bottom: 0px;
+  padding-right: 10px;
+  border-radius: 50%;
+  animation: fusa 1.7s ease infinite alternate;
+}
+@keyframes fusa {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(20px);
+  }
+}
+.fif img {
+  width: 100%;
+}
+/* project tambahan */
 
 /* RESPONSIVE BREAKPOINT ----------------------------------------->*/
 

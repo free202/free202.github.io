@@ -43,10 +43,12 @@
       </div>
 
       <ul>
-        <li><a style="color: red" class="active" href="#">Home</a></li>
-        <li><a href="#project">Project</a></li>
+        <li>
+          <a style="color: rgb(255, 98, 0)" class="active" href="#">Home</a>
+        </li>
+        <li><a href="#project">Roadmap</a></li>
         <li><a href="#tokenomics">Tokenomics</a></li>
-        <li><a href="index - Copy.html">Fasility</a></li>
+        <li><a href="index - Copy.html">Facility</a></li>
         <li><a href="#affiliate">Affiliate</a></li>
         <li><a href="#Contact">Contact Us</a></li>
       </ul>
@@ -290,7 +292,7 @@
       data-aos-anchor-placement="bottom-bottom"
       class="judul-empat"
     >
-      <h3>Fasility <span>freedomtoken</span></h3>
+      <h3>Facility <span>freedomtoken</span></h3>
     </div>
     <div
       data-aos="fade-up"
@@ -365,9 +367,36 @@
       data-aos-anchor-placement="bottom-bottom"
       class="tombol"
     >
-      <a href="fasility.html"><i class="bi bi-arrow-right">See more</i></a>
+      <a href="index - Copy.html"><i class="bi bi-arrow-right">See more</i></a>
     </div>
     <!-- fasilitas -->
+    <!-- project -->
+    <div
+      data-aos="fade-down"
+      data-aos-duration="900"
+      data-aos-anchor-placement="bottom-bottom"
+      class="judul-empat-2"
+    >
+      <h3>Pro<span>ject</span></h3>
+    </div>
+    <div
+      data-aos="fade-up"
+      data-aos-anchor-placement="bottom-bottom"
+      data-aos-duration="900"
+      class="atap"
+    >
+      <div class="fif-conten">
+        <h5>Fif Token</h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius,
+          distinctio?
+        </p>
+      </div>
+      <div class="fif">
+        <img src="img/gggf-removebg-preview.png" alt="" width="" />
+      </div>
+    </div>
+    <!-- project -->
 
     <!-- affiliate -->
     <div
@@ -410,9 +439,10 @@
     <div class="footer-ev">
       <div id="Contact" class="content-fo">
         <h4>Link</h4>
-        <a style="color: red" class="active" href="">Home</a>
+        <a style="color: rgb(255, 119, 0)" class="active" href="">Home</a>
         <a href="">Tokenomics</a>
-        <a href="">Project</a>
+        <a href="">Roadmap</a>
+        <a href="">Facility</a>
         <a href="">Affiliate</a>
       </div>
       <div class="addres">
@@ -426,75 +456,62 @@
           >Freedomrewardtoken@gmail.com</a
         >
       </div>
-      <div class="subscribe">
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label"
-            >Email address</label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="name@example.com"
-            id="inputwithvalue"
-          />
+      <div class="subs">
+        <div
+          class="alert alert-success d-none alert-dismissible fade show my-alert"
+          role="alert"
+        >
+          <strong>Thank You</strong> Your massage sucses
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="alert"
+            aria-label="Close"
+          ></button>
         </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label"
-            >Comment area</label
-          >
-          <textarea
-            class="form-control"
-            id="exampleFormControlTextarea1"
-            rows="3"
-          ></textarea>
-          <div class="subs">
-            <!-- Button trigger modal -->
-            <button
-              type="button"
-              class="btn btn-danger"
-              data-bs-toggle="modal"
-              data-bs-target="#staticBackdrop"
-            >
-              Submit
-            </button>
-
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="staticBackdrop"
-              data-bs-backdrop="static"
-              data-bs-keyboard="false"
-              tabindex="-1"
-              aria-labelledby="staticBackdropLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    Your message has been successfully sent!
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <form name="freedom-contact">
+          <div class="mb-4">
+            <label for="email" class="form-label">Email address</label>
+            <input
+              name="email area"
+              type="email"
+              class="form-control"
+              id="Email"
+              aria-describedby="emai"
+            />
           </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Comment Area</label
+            >
+            <textarea
+              name="comment area"
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-danger btn-kirim">Send</button>
+          <button
+            class="btn btn-danger d-none btn-loading"
+            type="button"
+            disabled
+          >
+            <span
+              class="spinner-border spinner-border-sm"
+              aria-hidden="true"
+            ></span>
+            <span role="status">Loading...</span>
+          </button>
+        </form>
+        <div
+          style="opacity: 0"
+          class="alert alert-danger alert-dismissible fade show"
+          role="alert"
+        >
+          <strong>Holy guacamole!</strong> You should check in on some of those
+          fields below.
         </div>
       </div>
     </div>
@@ -516,6 +533,26 @@
     <!-- footer -->
 
     <!-- my javascript -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxTt0JLSvCiJ22yuB9h910nj5UUYOsFUT79RYnOHaMOm2Wd2VhOyGvRaepUUciYnXu-/exec";
+      const form = document.forms["freedom-contact"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+            myAlert.classList.toggle("d-none");
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
     <script src="free js.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
