@@ -293,24 +293,24 @@ ul.skills li.sk-ani {
 ul.skills li.sk-anu {
   --per: 2;
 }
-ul.skills li.sk-cms {
+ul.skills li.sk-lock {
   --per: 40;
 }
-ul.skills li.sk-dis {
-  --per: 5;
+ul.skills li.sk-comdev {
+  --per: 10;
 }
 ul.skills li.sk-dtb {
   --per: 30;
 }
 ul.skills li.sk-pro {
-  --per: 10;
+  --per: 30;
 }
 ul.skills li.sk-res {
   --per: 90;
 }
 
-ul.skills li.sk-gim {
-  --per: 90;
+ul.skills li.sk-liq {
+  --per: 7;
 }
 ul.skills li.sk-ado {
   --per: 60;
@@ -321,15 +321,15 @@ ul.skills li.sk-not {
 ul.skills li.sk-tri {
   --per: 70;
 }
-ul.skills li.sk-wor {
-  --per: 90;
+ul.skills li.sk-pool {
+  --per: 5;
 }
-ul.skills li.sk-tre {
-  --per: 65;
+ul.skills li.sk-mark {
+  --per: 5;
 }
 
-ul.skills li.sk-css {
-  --per: 95;
+ul.skills li.sk-dev {
+  --per: 3;
 }
 ul.skills li.sk-htm {
   --per: 90;
