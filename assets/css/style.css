@@ -548,7 +548,7 @@ body.active {
 
 .trend-card .card-title {
   color: var(--white);
-  font-size: var(--fs-7);
+  font-size: var(--fs-5);
   font-weight: var(--fw-700);
   transition: var(--transition-1);
 }
