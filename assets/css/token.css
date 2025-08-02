@@ -297,20 +297,20 @@ ul.skills li.sk-lock {
   --per: 20;
 }
 ul.skills li.sk-comdev {
-  --per: 10;
+  --per: 12;
 }
 ul.skills li.sk-dtb {
   --per: 30;
 }
 ul.skills li.sk-pro {
-  --per: 12;
+  --per: 10;
 }
 ul.skills li.sk-res {
   --per: 90;
 }
 
 ul.skills li.sk-liq {
-  --per: 14;
+  --per: 15;
 }
 ul.skills li.sk-ado {
   --per: 60;
@@ -325,7 +325,7 @@ ul.skills li.sk-pool {
   --per: 40;
 }
 ul.skills li.sk-mark {
-  --per: 3;
+  --per: 2;
 }
 
 ul.skills li.sk-dev {
